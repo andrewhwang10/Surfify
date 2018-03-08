@@ -4,6 +4,16 @@
     "version": "1.0",
     "manifest_version": 2,
 
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js"]
+    },
+
+    "content_scripts": [{
+        "matches": ["http://*/*"],
+        "js": ["content.js"]
+    }],
+
     "browser_action": {
         "default_title": "Play music by surfing!",
         "default_popup": "popup.html"
@@ -11,4 +21,4 @@
 
     "icons": {"128": "128.png" },
     "permissions": ["http://*/*", "https://*/*"]
-  }
+}

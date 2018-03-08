@@ -2,8 +2,15 @@
 <html>
   <head>
       <script src="background.js"></script>
+      <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <div>Sign in to start listening!</div>
-  </body>
+  <body style="background-color:transparent">
+    <div>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+    </div>
+      <iframe id="player" src="https://open.spotify.com/embed?uri=spotify:track:4Ql4g0hfXEjuPFBnC3tKA0" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </body> 
 </html>
