@@ -1,0 +1,14 @@
+{
+    "name": "Surfify",
+    "description": "Music catered to your site choices.",
+    "version": "1.0",
+    "manifest_version": 2,
+
+    "browser_action": {
+        "default_title": "Play music by surfing!",
+        "default_popup": "popup.html"
+    },
+
+    "icons": {"128": "128.png" },
+    "permissions": ["http://*/*", "https://*/*"]
+  }
