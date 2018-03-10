@@ -17,5 +17,5 @@
         "run_at": "document_end"
     }],
 
-    "permissions": ["activeTab", "http://*/*", "https://*/*"]
+    "permissions": ["tabs", "activeTab", "http://*/*", "https://*/*"]
 }
