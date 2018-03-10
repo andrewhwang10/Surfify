@@ -1,9 +1,5 @@
-// Listen for messages
-chrome.runtime.onMessage.addListener(function (msg, sendResponse) {
-    // If the received message has the expected format...
-    if (msg.text === 'report_back') {
-        // Call the specified callback, passing
-        // the web-page's DOM content as argument
-        sendResponse(document.all[0].outerHTML);
-    }
-});
+var url = location.href;
+var title = document.getElementsByTagName("title")[0].innerHTML;
+
+let page = { url: location.href, title: document.getElementsByTagName("title")[0].innerHTML };
+chrome.runtime.sendMessage(page);
